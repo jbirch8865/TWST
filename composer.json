@@ -1,5 +1,8 @@
 {
     "require": {
-        "jbirch8865/php_tools": "^1.3"
+        "jbirch8865/php_tools": "1.3.88"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
     }
 }
