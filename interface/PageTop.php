@@ -52,7 +52,7 @@
     <div class="collapse navbar-collapse" id="collapse_target">
     <ul class = "navbar-nav">
         <li class = "nav-item">
-            <a class = "nav-link" href="#">Jobs</a>
+            <a class = "nav-link" href="Events_index.php">Events</a>
         </li>
         <li class = "nav-item">
             <a class = "nav-link" href="Equipment_index.php">Equipment</a>

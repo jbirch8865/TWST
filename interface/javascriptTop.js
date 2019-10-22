@@ -418,6 +418,63 @@ $(document).on('click', 'a[href="#Edit_Equipment"]', function(){
     $("#update_equipment_modal_title").text("Update "+equipment_name);
 })
 
+
+$(document).on('click', 'a[href="#Edit_Event"]', function(){
+    $.each($(this).prop('classList'),function (index, value) {
+        if(value.startsWith('event_id='))
+        {
+            event_id = value.substring(9,value.length);
+            $("#update_event_id").val(event_id);
+        }
+        if(value.startsWith('customer_name='))
+        {
+            customer_name = value.substring(14,value.length);
+            $("#update_customer_name").val(customer_name);
+        }
+        if(value.startsWith('start_time='))
+        {
+            start_time = value.substring(11,value.length);
+            $("#update_start_time").val(start_time);
+        }
+        if(value.startsWith('end_time='))
+        {
+            end_time = value.substring(9,value.length);
+            $("#update_end_time").val(end_time);
+        }
+        if(value.startsWith('event_location='))
+        {
+            event_location = value.substring(15,value.length);
+            $("#update_event_location").val(event_location);
+        }
+        if(value.startsWith('event_type_id='))
+        {
+            event_type_id = value.substring(14,value.length);
+            $("#update_event_type_id option").each(function () {
+                if($(this).val() == event_type_id)
+                {
+                    $(this).attr('selected',true);
+                }else
+                {
+                    $(this).attr('selected',false);
+                }
+            });
+        }
+    });
+    if(value.startsWith('guest_count='))
+    {
+        guest_count = value.substring(12,value.length);
+        $("#update_guest_count").val(guest_count);
+    }
+    if(value.startsWith('parking_instructions='))
+    {
+        parking_instructions = value.substring(21,value.length);
+        $("#update_parking_instructions").val(parking_instructions);
+    }
+    $("#ChangeEventModal").modal('toggle');
+    $("#update_event_modal_title").text("Update "+customer_name+" event");
+})
+
+
 $(document).on('click','a[href="#Edit_Employee"]', function(){
     $.each($(this).prop('classList'),function (index, value) {
         if(value.startsWith('employee_id='))

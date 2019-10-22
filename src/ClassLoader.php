@@ -9,6 +9,7 @@ require dirname(__FILE__). DIRECTORY_SEPARATOR . 'UserClass.php';
 require dirname(__FILE__). DIRECTORY_SEPARATOR . 'EquipmentClass.php';
 require dirname(__FILE__). DIRECTORY_SEPARATOR . 'Public_Functions.php';
 require dirname(__FILE__). DIRECTORY_SEPARATOR . 'CustomerClass.php';
+require dirname(__FILE__). DIRECTORY_SEPARATOR . 'EventClass.php';
 
 session_start();
 require dirname(__FILE__). DIRECTORY_SEPARATOR . 'StartupClasses.php';

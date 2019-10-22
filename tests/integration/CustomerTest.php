@@ -6,8 +6,6 @@ class Customer_Test extends \PHPUnit\Framework\TestCase
     {
         $customer = new \company_program\Customer();
         $this->assertTrue($customer->Create_Customer(uniqid()));
-        $customer->We_Can_Not_Do_Business($customer);
-        $customer->We_Can_Do_Business($customer);
         $customer->Set_Customer_Address('1234 S Road St.&#10;Portland, OR 97215');        
         $this->Create_Contractor($customer);
         $this->assertTrue($customer->Delete_Customer($customer));
@@ -23,8 +21,6 @@ class Customer_Test extends \PHPUnit\Framework\TestCase
         {
             $customer = new \company_program\Customer();
             $this->assertTrue($customer->Create_Customer("customer".$i));
-            $customer->We_Can_Not_Do_Business($customer);
-            $customer->We_Can_Do_Business($customer);
             $customer->Set_Customer_Address('1234 S Road St.&#10;Portland, OR 97215');        
             $this->Create_Contractor($customer);
             $i = $i + 1;

@@ -11,4 +11,6 @@ class Equipment_Subtype_Does_Not_Exist extends \exception\CustomException{}
 class Equipment_Type_Does_Not_Exist extends \exception\CustomException{}
 class Equipment_Does_Not_Exist extends \exception\CustomException{}
 class Skill_Does_Not_Exist extends \exception\CustomException{}
+class Event_Does_Not_Exist extends \exception\CustomException{}
+class Event_Type_Does_Not_Exist extends \exception\CustomException{}
 ?>
